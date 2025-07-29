@@ -7,7 +7,7 @@ function Pai() {
 
   return (
     <div>
-      <Filho texto={mensagem} onClick={Textoson} />
+      <Filho texto={mensagem} onClick={Textoson} /><br></br>
       <button onClick={() => setMensagem("Nova mensagem!")}>
         Adicionar mensagem pelo componente Pai
       </button>

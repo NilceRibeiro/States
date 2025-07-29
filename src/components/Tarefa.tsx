@@ -12,7 +12,7 @@ type Props = {
 
 function Tarefa({ tarefa, onConcluir }: Props) {
   return (
-    <div>
+    <div><br></br>
       <span style={{ textDecoration: tarefa.concluida ? 'line-through' : 'none' }}>
         {tarefa.titulo}
       </span>
