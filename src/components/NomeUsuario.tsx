@@ -5,6 +5,7 @@ function NomeUsuario() {
 
   function eventoDeonChange (event: React.ChangeEvent<HTMLInputElement>) {
     setNome(event.target.value);
+    {/*forma mais enxuta não utilizar essa formula */}
   }
   return (
     <div>
@@ -13,7 +14,7 @@ function NomeUsuario() {
         type="text"
         placeholder="Digite seu nome"
         value={nome}
-        onChange={eventoDeonChange}
+        onChange={eventoDeonChange} {/* mais enxuto: {(e) => setNome(e.target.value)} */}
       />
     </div>
   );
